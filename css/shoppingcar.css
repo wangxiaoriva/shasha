@@ -1,0 +1,126 @@
+a{text-decoration: none;}
+a{color: #666;}
+.goshoppingcar{
+    width: 100%;
+}
+.goshoppingcar-con{
+    width: 985px;
+    margin: 0 auto;
+    padding-top:20px;
+    overflow: hidden;
+}
+.goshoppingcar-con-tips{
+    height: 30px;
+    background: #ffab3e;
+    color: #fff;
+    padding-left: 14px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.goshoppingcar-con-title{
+    margin: 20px 0 0;
+    height: 38px;
+    background: url(../img/home-bt.png) no-repeat;
+    background-position: 0px -845px;
+}
+.goshoppingcar-con-subtitle{
+    text-align: right;
+    padding-bottom: 10px;
+}
+.goshoppingcar-con-subtitle span{
+    color: rgb(236,62,125);
+}
+.other-left{
+    float: left;
+}
+.other-right{
+    float: right;
+}
+.other-item-select{
+    line-height: 40px;
+    margin-right: 20px;
+    float: left;
+}
+.other-right-item{
+    line-height: 40px;
+    margin-right: 20px;
+    float: left;
+}
+.other-right-item.go-pay{
+    width: 160px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background: #c33;
+    cursor: pointer;
+}
+.total-select,
+.total-money{
+    color: #ed407e;
+    font-size: 18px;
+    padding: 0 10px; 
+}
+/*购物车表格*/
+table th{
+    font-size: 14px;
+    color:#666;
+}
+
+table tr{
+    font-size: 12px;
+    color:#b2b2b2; 
+    
+}
+
+tbody .select-box{
+    width:212px;
+    height: 135px;
+    
+}
+.select-box img{
+    margin-left:30px;
+}
+tbody .goods-name{
+    width:378px;
+    height: 135px;
+    line-height: 135px;
+}
+#table-se tbody tr td{
+    vertical-align: middle;
+    border: none;
+}
+#table-se tbody tr:hover{
+    background:#fe7dab;
+    color: #000;
+    cursor: pointer;
+}
+.goods-name span{
+    display: inline-block;
+    margin-top: 15px;
+}
+tbody .goods-price{
+    width:98px;
+    height: 135px;
+
+}
+tbody .goods-amount{
+    width:99px;
+    height: 135px;
+}
+tbody .option-item{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #f4f6f5 ;
+    text-align: center;
+    display: inline-block;
+}
+tbody .option-input{
+    width:30px;
+    height: 20px;
+    border: 1px solid #ddd;
+}
+tbody .delete{
+    color:#666;
+    text-decoration: none;
+}

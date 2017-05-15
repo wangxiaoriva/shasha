@@ -1,0 +1,9 @@
+console.log(1);
+$(function(){
+    $('.time').each(function(){
+        $(this).countDown($(this).attr('data-end'),function(){
+            console.log(this);
+            $(this).html('已结束');
+        });
+    });
+});

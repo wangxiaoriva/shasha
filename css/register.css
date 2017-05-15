@@ -1,0 +1,126 @@
+.regist{
+    width: 100%;
+    background: #fff;
+    
+}
+.regist-con{
+    width: 1090px;
+    margin: 0 auto;
+    background: url(../img/rgist.jpg) no-repeat;
+    background-position: 0px;
+    overflow: hidden;
+}
+
+.container.regist{
+    width: 350px;
+    padding:35px;
+    margin-left: 600px;
+    height: 465px;
+    box-shadow: 0 0 10px #e1e1e1;
+}
+.regist-title{
+    margin-bottom: 10px;
+}
+.regist-signup{
+    margin-top: 40px;
+}
+.regist-title-txt{
+    color: #5a5d6c;
+    font-weight: normal;
+    font-size: 21px;
+}
+.regist-title-fr{
+    font-size: 12px;
+    float: right;
+    margin-top:5px;
+}
+.regist-title-fr a,.mimase{
+    color: #ec3e7d;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 12px;
+}
+
+.regist-signup input{
+    width: 340px;
+    height: 26px;
+    line-height: 26px;
+    padding: 4px;
+    outline: none;
+    margin: 0;
+    border: 1px solid #ddd;
+}
+.regist-signup input:hover{
+    border: 1px solid #f9a0b4;
+    background:rgb(250, 255, 189);
+}
+.regist-signup .yzc{
+    width: 120px;
+}
+.regist-signup .xz{
+    width: 20px;
+    height: 13px;
+}
+.regist-signup .sjyz{
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    background: pink;
+}
+.btn2{
+    width: 100%;
+    background: #ec3e7d;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    border:none;
+}
+.change{
+    width: 50px;
+    line-height: 18px;
+    color: #666;
+    cursor: pointer;
+    font-size: 12px;
+}
+/**/
+.login-p{
+    padding-top:40px;
+    color: #3e3e3e;
+}
+.login-tubiao li{
+    float: left;
+    font-size: 12px;
+    margin-right: 18px;
+}
+.login-tubiao li img{
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 35px;
+}
+.login-tubiao li a{
+    margin-left: 3px;
+    margin-right: 3px;
+    color: #3e3e3e;
+}
+/*验证注册*/
+.error {
+    border-color: #c33;
+}
+
+.regist-signup span{
+    font-size: 12px;
+    margin: 5px 0;
+    width: 350px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    display: block;
+}
+.regist-signup span.red{
+    color: #c33;
+}
+.regist-signup span.green{
+    color: greenyellow;
+}

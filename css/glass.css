@@ -1,0 +1,473 @@
+.nav-quanbu-bo{
+    display:none;
+}
+.nav-quanbu:hover .nav-quanbu-bo{
+    display: block;
+}
+.glass-container{
+    width: 100%;
+}
+.glass-container-con{
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+}
+.glass-container-fl{
+    width: 500px;
+    float: left;
+    background: #fff;
+    padding:25px;
+}
+.glass-container-fr{
+    float: right;
+    width: 460px;
+    padding-top: 25px;
+    margin-right: 40px;
+    background: #fff;
+}
+.glass-box-top{
+    height: 54px;
+    margin: 0 auto;
+    width: 500px;
+}
+.glass-box-center{
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+}
+.glass-box-footer{
+    width: 500px;
+    height: 40px;
+    margin: 0 auto;
+}
+.glass-box-bottom{
+    width: 500px;
+    height: 110px;
+    margin: 0 auto;
+    position: relative;
+}
+.glass-imgwrap{
+    width: 300px;
+    height: 300px;
+    background: #ddd;
+    margin-left: 100px;
+    position: relative;
+}
+.glass-imgwrap img{
+    width: 300px;
+    height: 300px;
+}
+.filter{
+    width:200px;
+    height: 150px;
+    border: 1px solid #ddd;
+    position:absolute;
+    top: 0;
+    left:0;
+    background: rgba(255,255,0,0.4);
+    display: none;
+    cursor: pointer;
+}
+.glass-largeImg-wrap{
+    width: 400px;
+    height: 300px;
+    border:1px solid #ddd;
+    position: absolute;
+    left:490px;
+    top:0;
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+
+}
+.glass-largeImg-wrap img{
+    width:600px;/* (300/200)*400 */
+    height:600px; /* (300/150)*300 */
+    position: absolute;
+}
+
+.simg-item{
+    width: 100px;
+    height: 100px;
+    border:1px solid #ddd;
+    line-height: 100px;
+    text-align: center;
+    float: left;
+    margin:0 6px;
+
+}
+.glass-botimg-img{
+    width: 460px;
+    height: 105px;
+    position: absolute;
+    left: 18px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.glass-botimg-img img{
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.glass-arrows{
+    position: absolute;
+    top:38px;
+    margin-top: 5px;
+    width: 16px;
+    height: 32px;
+    text-align: center;
+}
+.glass-arrows.arrow-left{
+    left: 0;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -30px 0;
+}
+.glass-arrows.arrow-right{
+    right: 0;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -4px -30px;
+}
+.glass-img-yidong{
+    width: 650px;
+    height: 100%;
+    position: absolute;
+}
+.glass-img-yidong li:hover{
+    border:5px solid #e5cbb2;
+    width: 93px;
+    height: 94px;
+}
+.simg-item.current{
+    border:5px solid #e5cbb2;
+    width: 93px;
+    height: 94px;
+}
+.glass-fr-title{
+    padding-bottom: 30px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: normal;
+}
+.glass-fr-productinfo{
+    float: left;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.glass-fr-title a{
+    color:#3e3e3e;
+    display: inline-block;
+}
+.fr-shichangjia{
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.fr-activity{
+    padding:20px 0;
+}
+.fr-buy-num{
+    padding:20px 0;
+    margin-top: 10px;
+}
+.shuliang-item{
+    text-align: center;
+    border:1px solid #ccc;
+}
+.shuliang-item.deccrease{
+    width: 28px;
+    line-height: 28px;
+    display: inline-block;
+}
+.shuliang-item.input{
+    height: 28px;
+    width: 48px;
+    outline: none;
+}
+.shuliang-item.increase{
+    width: 28px;
+    line-height: 28px;
+    display: inline-block;
+}
+.fr-buy{
+    padding:10px 0;
+    margin-top: 10px;
+}
+.fr-share{
+    border-top: 1px solid #dfdfdf;
+    margin-top: 15px;
+    padding-top: 20px;
+}
+.gl-details{
+    height: 24px;
+    color: #888888;
+    padding-left: 5px;
+}
+.gl-details-price{
+    color: #ec3e7d;
+    font-weight: bold;
+}
+.gl-old-price{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.gl-discount{
+    color: #cb9966;
+    font-size: 16px;
+}
+.gl-action-price{
+    font-size: 35px;
+    line-height: 1.2;
+}
+.gl-old-price span{
+    text-decoration: line-through;
+    color: #959595;
+}
+.gl-zhijiang{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    line-height: 22px;
+    width: 100%;
+    height: 22px;
+}
+.zhijiang-fi{
+    background: #c69a62;
+    color: #fff;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 2px 8px;
+    margin-right: 5px;
+}
+.zhijiang-se{
+    line-height: 22px;
+    display: block;
+    float: left;
+}
+.cuxiao-fi{
+    background: #71D2C3;
+    color: #fff;
+    height: 16px;
+    line-height: 16px;
+}
+.score-item{
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.guige-item{
+    padding: 8px 0;
+}
+.score-item-star{
+    height: 24px;
+    color: #888888;
+    padding-left: 5px;
+}
+.score-item-pingjia{
+    color: #3e3e3e;
+    margin-left: 15px;
+}
+.fonts.stars{
+   color: #c29b60;
+   font-style: normal;
+}
+.fr-buy-score ul{
+    position: relative;
+}
+.fonts.banstar{
+    font-size: 18px;
+    position: absolute;
+    left:110px;
+    font-style: normal;
+    top:12px;
+    color: #c29b60;
+}
+.guige-fi{
+    float: left;
+    padding-right: 10px;
+}
+.gui-con-item{
+    float: left;
+    margin-bottom: 4px;
+    margin-right: 6px;
+} 
+.gui-con-item a{
+    display: block;
+    border: 1px solid #ccc;
+    color: #555;
+    line-height: 20px;
+    padding: 3px 8px;
+    background: #f2f2f2;
+}
+.gui-item-se{
+    border: 1px solid #ec3e7d;
+    color: #555;
+    border-radius: 1px;
+    background: #f2f2f2;
+    cursor: default;
+}
+.fr-num-stock{
+    margin-bottom: 20px;
+}
+.gscar-btn{
+    margin-right: 15px;
+    width: 220px;
+    height: 50px;
+    background: #ec3e7d;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    color: #fff;
+    font-size:18px;
+}
+.share-fl{
+    float: left;
+}
+.share-fr{
+    float: right;
+}
+.share-text{
+    color: #666;
+}
+.share-tubiao{
+    width: 175px;
+    display: inline-block;
+    font-size: 26px;
+}
+.share-tubiao li{
+    float: left;
+}
+.share-tubiao li span{
+    padding: 0;
+    margin:0;
+}
+.share-tubiao a{
+    line-height: 16px;
+    padding: 5px 2px;
+    display: block;
+}
+.fonts.dou{
+    color: green;
+    
+}
+.goods-style-item{
+    padding:2px;
+    width: 350px;
+    margin-bottom: 6px;
+    border: 1px solid #ddd;
+}
+.goods-style-item.selected{
+    border: 1px solid #ec3e7d;
+}
+/*宝贝详情*/
+.baobei{
+    width:100%;
+    margin-top: 30px;
+}
+.baobei-con{
+    background:#fff;
+    width:1200px;
+    margin:0 auto;
+    margin-bottom:26px;
+}
+.baobei-con-fl{
+   width: 253px;
+   background: #fff;
+   float: left;
+}
+.baobei-fl-liulan{
+    height:53px;
+    line-height:50px;
+    borer-left:5px solid #c69a62;
+    border-bottom:1px solid #ebebeb;
+    color:#585c65;
+    font-size:16px;
+    padding-left:12px;
+    position:relative;
+}
+.baobei-con-fr{
+    width: 811px;
+    float: right;
+}
+.shangpincanshu{
+    height: 50px;
+    width: 811px;
+    background: #fff;
+}
+.shangpincanshu-item{
+    height: 43px;
+    line-height:50px;
+    padding:2px 26px;
+    float: left;
+}
+.shangpincanshu-item.current{
+    border-bottom: 3px solid #c69a62;
+}
+.fl-liulan-xiangqing li{
+    height: 69px;
+    border-top: 1px dashed #d4d4d4;
+    padding: 20px 10px;
+}
+.fl-liulan-xiangqing img{
+    max-height: 69px;
+    max-width: 69px;
+}
+.liulan-a{
+    display: block;
+    width: 69px;
+    height: 69px;
+    float: left;
+    text-align: center;
+}
+.liulan-xiangqing-info{
+    margin-left: 79px;
+}
+.liulan-xiangqing-info .liulan-xiangqing-info-p1{
+    font-size:14px;
+    line-height: 22px;
+}
+.liulan-xiangqing-info .liulan-xiangqing-info-p2{
+    font-size:14px;
+    color: #ec3e7d;
+}
+.liulan-xiangqing-info .liulan-xiangqing-info-p2 span{
+    margin-left: 10px;
+    font-size:12px;
+    color: #959595;
+    text-decoration: line-through;
+}
+.canshu-one{
+    background: #fff;
+    padding-top: 30px;
+}
+.canshulouceng{
+    background: #fff;
+    padding-top: 30px;
+}
+.canshu-one-title{
+    height: 32px;
+    border-left: 3px solid #db3f7e;
+    background: url(../img/probt.png) no-repeat 110px 3px;
+    line-height: 32px;
+    font-weight: 400;
+    padding-left: 10px;
+    font-size: 22px;
+}
+.canshu-one ul{
+    padding:30px 45px;
+}
+.canshu-one-title p{
+    color: #666;
+}
+.canshu-one-title .title-bianhao{
+    margin-right: 30px;
+    display:inline-block;
+}
+.articla{
+    padding: 60px 30px;
+}

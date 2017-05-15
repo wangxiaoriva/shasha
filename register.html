@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/shouye.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <style>
+        html,body{
+            background:#fff;
+        }
+    </style>
+</head>
+<body>
+<!-- 顶部导航 -->
+<div class="topbar">
+    <div class="topcon">
+        <div class="topcon-l">
+            <span>欢迎光临莎莎网！</span>
+            <a href="login.html">登录</a>
+            <span>或</span>
+            <a href="register.html">免费注册</a>
+        </div>
+        <div class="topcon-r">
+            <ul>
+                <li class="me-li">
+                    <div>我的账户<span class="fonts">&#xe66e;</span></div>
+                    <dl class="dlpos">
+                        <dd>
+                            <a href="javascript:;" class="toua">我的订单</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的积分</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的优惠券</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的收藏</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的评价</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="go-che">
+                    <div><span class="fonts red">&#xe632;</span>我的购物车</div>
+                    <div class="gowuche">
+                        <div class="gowuche-con">购物车中还没有商品 ,<br>快去挑选心爱的商品吧</div>
+                    </div>
+                </li>
+                <li class="t-hua">我的收藏</li>
+                <li class="t-hua">我的站内信</li>
+                <li class="t-hua">积分中心</li>
+                <li class="t-hua">Global site</li>
+                <li class="t-hua">
+                <div>关注我们<span class="fonts  red wb"><img src="img/w.png"></span><span class="fonts  red wx"><img src="img/x.png"></span></div>
+                <div class="weibo">
+                    <img src="img/w.jpg">
+                </div>
+                <div class="weixin">
+                    <img src="img/x.jpg">
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 莎莎logo -->
+<div class="header-main">
+    <div class="header-con">
+        <div class="header-logo">
+            <img src="img/l.png">
+        </div>
+    </div>
+</div>
+<!-- 注册-->
+<div class="regist">
+    <div class="regist-con">
+        <div class="container regist">
+            <div class="regist-title">
+                <div class="regist-title-txt">
+                    注册账号
+                    <span class="regist-title-fr">
+                    已有莎莎网帐号？<a href="javascript:;">立即登录</a>
+                    </span>
+                </div>
+            </div>
+            <div class="regist-signup">
+                <form action="http://192.168.55.44/PC-Project-Admin/register.php" method="post">
+                    <div>
+                        <input type="text" class="username" name="account" placeholder="请输入用户名" />
+                        <span class="yhxs"></span>
+                    </div>
+                    <div>
+                        <input type="password" class="password" name="password" placeholder="请输入密码" />
+                        <span class="mm"></span>
+                    </div>
+                    <div>
+                        <input type="password" class="agpassword" placeholder="请再次输入密码" />
+                        <span class="qrmm"></span>
+                    </div>
+                    <div>
+                        <input type="text" class="phone" placeholder="请输入手机号" />
+                        <span class="sjh"></span>
+                    </div>
+                    <div>
+                        <input type="text" class="yzc" placeholder="请输入验证码"/>
+                        <span class="sjyz">1234</span>
+                        <a href="javascript:;" class="change">看不清?换一张</a>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="xz" checked />同意 莎莎使用条款 和 隐私保护政策
+                    </div>
+                    <div>
+                             <button class="btn2" type="button">注册</button>
+                    </div>
+                </form>
+            </div>
+        </div>   
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/shouye.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script>
+   $(function(){
+            var rules = {
+                account:/^[a-zA-Z_]\w{5,15}$/,
+                password:/^.{6,16}$/,
+                phone:/^1[3578]\d{9}$/
+            };
+    
+            var 
+                username = $('.username'),
+                password = $('.password'),
+                agpassword = $('.agpassword'),
+                phone = $('.phone'),
+                yzc = $('.yzc'),
+                btn2 = $('.btn2');
+           
+ 
+
+
+            //判断用户名是否合法
+
+            username.on('blur',function(){
+                var usernameV = $('.username').val().trim(),
+                    spanVname = $('.yhxs');
+                if(usernameV == ''){
+                    spanVname.html('内容不能为空');
+                    spanVname.addClass('red')
+                }else{
+                        if(rules.account.test(usernameV)){
+                                spanVname.html('用户名合法');
+                                spanVname.addClass('green')
+                       }else{
+                                spanVname.html('用户名不合法');
+                                spanVname.addClass('red');
+
+                       }
+                }
+                
+            })
+            //判断密码长度是否合法
+            password.on('blur',function(){
+                var passwordV = $('.password').val().trim();
+                    mmV = $('.mm');
+                if(passwordV == ''){
+                    mmV.html('内容不能为空');
+                    mmV.addClass('red');
+                }else{
+                        if(rules.password.test(passwordV)){
+                            mmV.html('');
+                        }else{
+                            mmV.html('密码长度不对');
+                            mmV.addClass('red');
+                        }
+                }
+                
+            })
+            //判断两次密码是否正确
+            agpassword.on('blur',function(){
+                var agpasswordV = $('.agpassword').val().trim(),
+                    passwordV = $('.password').val().trim();
+                    qrmm = $('.qrmm');
+                if(agpasswordV == ''){
+                    qrmm.html('内容不能为空');
+                    qrmm.addClass('red')
+                }else{
+                    if(agpasswordV == passwordV){
+                        qrmm.html('');
+                    }else{
+                        qrmm.html('请再次确认密码');
+                        qrmm.addClass('red')
+                    }
+                }
+            })
+            //验证手机号
+            phone.on('blur',function(){
+                var phoneV = $('.phone').val(),
+                    sjhV = $('.sjh');
+                if(phoneV == ''){
+                    sjhV.html('内容不能为空')
+                    sjhV.addClass('red')
+                }else{
+                    if(rules.phone.test(phoneV)){
+                        sjhV.html('')
+                    }else{
+                        sjhV.html('手机号不合法');
+                        sjhV.addClass('red');
+                    }
+                }
+                
+                    
+            })
+            //生成随机验证码
+            var str = '';
+            for(var i = 0; i <= 9; i++){
+                str += i;
+            }
+            for(var i = 65; i < (65+26); i++){
+                var code = String.fromCharCode(i);
+                str += code;
+            }
+            for(var i = 97; i < (97 + 26); i++){
+                var code = String.fromCharCode(i);
+                str += code;
+            }
+
+            $('.change').on('click',function(){
+                var str1 = '';
+                for(var i = 0; i < 4; i++){
+                    var rand = parseInt(Math.random()*52);
+                    var st = str.charAt(rand);
+                    str1 += st;
+                }
+                $('.sjyz').html(str1);
+                $('.sjyz').css({background:randColor()})
+
+            })
+            randColor();
+            function randColor(){
+       
+                var scolor="rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
+                 
+                return scolor;
+            }
+            //判断验证码
+            var yzc = $('.yzc');
+            yzc.on('blur',function(){
+                var sjyz = $('.sjyz').html().trim();
+                var yzcV = yzc.val().trim();
+                if(sjyz != yzcV){
+                    var str1 = '';
+                    for(var i = 0; i < 4; i++){
+                        var rand = parseInt(Math.random()*52);
+                        var st = str.charAt(rand);
+                        str1 += st;
+                    }
+                    $('.sjyz').html(str1);
+                    $('.sjyz').css({background:randColor()})
+                }
+            })
+
+            //点击注册验证用户名
+            btn2.on('click',function(){
+                
+                var account = $('.username').val();
+                var password = $('.password').val();
+                var phone = $('.phone').val();
+
+                console.log(account,password);
+                $.ajax({
+                    url:'http://192.168.55.44/PC-Project-Admin/register.php',
+                    data:{
+                        account:account,
+                        password:password,
+                        phone:phone
+                    },
+                    dataType:'jsonp',
+                    success:function(data){
+                        layer.alert(data.info);
+                        console.log(data);
+                        if(data.status){
+                            $('.yhxs').html('用户名已存在');
+                        }else{
+                         
+                            location.href = "login.html";
+                        }
+                       
+                    }
+                })
+            })
+        });
+</script>
+</html>

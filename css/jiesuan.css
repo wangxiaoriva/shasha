@@ -1,0 +1,352 @@
+.header-jiesuan-center{
+    width: 468px;
+    height: 62px;
+    float: left;
+    margin: 20px 0 0 280px;
+    background: url(../img/cartstep.png);
+    background-position: 0 -80px;
+}
+.header-jiesuan-fr{
+    padding-top: 30px;
+    width: 235px;
+    float: right;
+}
+.header-jiesuan-fr img{
+    max-width: :235px;
+    max-height: 62px;
+}
+.jiesuan{
+    width: 100%;
+    background:#f2f2f2;
+}
+.jiesuan-con
+{
+    width: 1000px;
+    margin:0 auto;
+}
+.jiesuan-con-title{
+    padding:0 0 5px 10px;
+}
+.jiesuan-title-txt{
+    font-size: 28px;
+    padding: 35px 0;
+    font-weight: bold;
+    color:#3e3e3e;
+}
+.order-dingdan{
+    color: #666;
+}
+.order-title{
+    height: 36px;
+    line-height: 36px;
+    padding-left: 20px;
+    padding-top: 16px;
+    background: #fff;
+}
+.dottitle{
+    background: #b39a5c;
+    border-radius: 14px;
+    width:26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    margin-right: 5px;
+    display: inline-block;
+}
+.order-title b{
+    font-size: 18px;
+    padding-right: 20px;
+    color: #676767;
+}
+.order-dingdan-main{
+    padding:20px 30px;
+    color: #666;
+    background: #fff;
+}
+.order-main-title{
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+    line-height: 30px;
+    margin: 20px;
+}
+
+
+.order-dingdan{
+    color:#666;
+    font-size: 14px;
+}
+.order-dizhi-con div,
+.shimingrenzheng div{
+    margin-bottom: 25px;
+}
+.order-dizhi-con input,
+.shimingrenzheng input,
+.xianjinquan input{
+    line-height: 35px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #ccc;
+    width: 268px;
+}
+.order-dizhi-con select:hover,
+.order-dizhi-con input:hover,
+.shimingrenzheng input:hover,
+.xianjinquan input:hover,
+.xianjinquan-main-item select:hover{
+    border: 1px solid #ec3e7d;
+    box-shadow: 0 0 10px #ec3e7d;
+}
+.order-dizhi-con select{
+    width:100px;
+    height: 37px;
+    line-height: 37px;
+    border: 0;
+    border: 1px solid #ccc;
+}
+.order-dizhi-con select option{
+    overflow-y: hidden;
+}
+.order-dizhi-con .address{
+    width: 600px;
+}
+.order-dizhi-con em{
+    font-style: normal;
+    color: #db3f7e;
+}
+.order-dizhi-con a,
+.xianjinquan-main-item a,
+.fukuan-queding a{
+    padding:8px 50px;
+    background: #ec3e7d;
+    color: #fff;
+}
+.order-dizhi-con a:hover,
+.xianjinquan-main-item a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.order-dizhi-con .queding,
+{
+    margin-left: 60px;
+}
+.order-dizhi-con .quxiao,
+.fukuan-queding .quxiao{
+    background: #f2f2f2;
+    color: #666;
+    margin-left: 15px;
+}
+.shimingrenzheng{
+    margin-top: 10px;
+    background: #fff;
+}
+.shimingrenzheng .wenxintips{
+    color: #f06b99;
+    width:900px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #f06b99;
+    font-size: 12px;
+    margin-left: 42px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #fbeeea;
+    border-radius: 5px;
+    text-indent: 10px;
+
+}
+.yonghutips{
+    padding:20px 30px;
+}
+.shenfen-red{
+    color:#f06b99;
+    position: relative;
+}
+.shenfen-jieshi{
+    position: absolute;
+    left: 128px;
+    top:-37px;
+    width:476px;
+    height: 90px;
+    color: #666;
+}
+.shenfen-jieshi a{
+    color: #f06b99;
+}
+.qingdan{
+    margin-top: 10px;
+    background: #fff;
+}
+/*biaoge*/
+#table-jiesuan{
+    text-indent:30px;
+    border: none;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+#table-jiesuan tbody{
+     border: none;
+}
+#table-jiesuan tr td{
+    vertical-align: middle;
+
+}
+#table-jiesuan tr:hover{
+    background: #fff;
+}
+#table-jiesuan .name-width{
+    width: 300px;
+    text-align: center;
+
+}
+#table-jiesua .price-width{
+    width: 205px;
+}
+#huatu{
+    color:#666;
+    position: relative;
+}
+#huatu span{
+    opacity: 0;
+    position: absolute;
+    left:30px;
+    top:40px;
+    display: block;
+    z-index: 100;
+}
+#huatu:hover span{
+   opacity: 1;
+}
+#table-jiesuan tbody tr td{
+    border:none;
+    height: 80px;
+}
+.xianjinquan{
+    border-top: 1px dotted #d6d6d6;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.xianjinquan-con{
+    text-align: left;
+    padding: 20px 30px;
+    line-height: 20px;
+}
+.xianjinquan-title{
+    font-weight: 400;
+    line-height: 50px;
+    margin-bottom: 5px;
+    color: #666;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.xianjinquan-main{
+    padding-left: 30px;
+    position: relative;
+}
+.xianjinquan-main-item{
+    margin-bottom: 8px;
+}
+.xianjinquan-main-item select{
+    padding: 5px 0;
+    border:1px solid #ccc;
+    line-height: 25px;
+    max-width: 280px;
+    outline: none;
+    height: 35px;
+}
+.xianjinquan-main-item select option{
+    padding:0 2px 1px;
+    color: #000;
+    cursor: pointer;
+}
+.xianjin-jieshi p{
+    color: rgb(255,0,0);
+}
+.jiagezongzhi-con{
+    height: 30px;
+    border-top: 1px dotted #d6d6d6;
+    margin-top: -10px;
+    padding: 20px 30px;
+    height: 195px;
+}
+.jiagezongzhi-con ul{
+    float: right;
+    width: 160px;
+}
+.jiagezongzhi-con ul li{
+    line-height: 26px;
+    font-size: 12px;
+}
+.jiagezongzhi-con .miaoshu{
+    width: 65px;
+    text-align: left;
+    margin-right: 30px;
+    display: inline-block;
+}
+.jiagezongzhi-con .jiesuan-maioshu{
+    border-top:1px solid #ececec;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.jiagezongzhi-con .jiesuan-maioshu .miaoshu-price{
+    color:#ec3e7d;
+}
+.fukuan-con{
+    width:1000px;
+    background: #fff;
+}
+.fukuan-con .order-title{
+    border-bottom: 1px dotted #d6d6d6;
+    padding-bottom: 10px;
+    height: 65px;
+}
+.fukuan-con .fukuan-center{
+    padding: 20px 30px;
+}
+.fukuan-center-item{
+    border-top: 1px solid #ececec;
+    height: 125px;
+}
+.fukuan-center-item p{
+    padding-top: 20px;
+}
+.zhifufangshi li{
+    float: left;
+    line-height: 40px;
+    margin-right: 45px;
+}
+.fukuantiaokuan{
+    padding-top:20px;
+}
+.fangshi-bao{
+    width: 125px;
+}
+.fukuan-zuo{
+    width: 268px;
+    float: left;
+}
+.fukuan-zhong{
+    width:362px;
+    margin-left: 30px;
+    float: left;
+    font-size: 12px;
+    padding-top: 0;
+}
+.fukuan-zhong p{
+    padding-top: 0;
+}
+.fukuan-you{
+    width: 198px;
+    float: right;
+}
+.fukuan-you .jine{
+    width: 65px;
+    line-height:70px;
+    font-size:18px;
+}
+.fukuan-center-item a:hover{
+    text-decoration: none;
+    color: #fff;
+}

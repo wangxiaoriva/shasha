@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/shouye.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/shoppingcar.css">
+    
+</head>
+<body>
+<!-- 顶部导航 -->
+<div class="topbar">
+    <div class="topcon">
+        <div class="topcon-l">
+            <span>欢迎光临莎莎网！</span>
+            <a href="login.html">登录</a>
+            <span>或</span>
+            <a href="register.html">免费注册</a>
+        </div>
+        <div class="topcon-r">
+            <ul>
+                <li class="me-li">
+                    <div>我的账户<span class="fonts">&#xe66e;</span></div>
+                    <dl class="dlpos">
+                        <dd>
+                            <a href="javascript:;" class="toua">我的订单</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的积分</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的优惠券</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的收藏</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的评价</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="go-che">
+                    <div><span class="fonts red">&#xe632;</span>我的购物车</div>
+                    <div class="gowuche">
+                        <div class="gowuche-con">购物车中还没有商品 ,<br>快去挑选心爱的商品吧</div>
+                    </div>
+                </li>
+                <li class="t-hua">我的收藏</li>
+                <li class="t-hua">我的站内信</li>
+                <li class="t-hua">积分中心</li>
+                <li class="t-hua">Global site</li>
+                <li class="t-hua">
+                <div>关注我们<span class="fonts  red wb"><img src="img/w.png"></span><span class="fonts  red wx"><img src="img/x.png"></span></div>
+                <div class="weibo">
+                    <img src="img/w.jpg">
+                </div>
+                <div class="weixin">
+                    <img src="img/x.jpg">
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 莎莎logo -->
+<div class="header-main">
+    <div class="header-con">
+        <div class="header-logo">
+            <img src="img/l.png">
+        </div>
+    </div>
+</div>
+<!-- 购物车-->
+<div class="goshoppingcar">
+    <div class="goshoppingcar-con">
+        <div class="goshoppingcar-con-tips">
+            保税仓直送商品结帐提示 1. 保税仓直送商品不可与香港直送商品同时结帐; 2.保税仓直送商品每张订单总金额不可超过 ¥2000。
+        </div>
+        <div class="goshoppingcar-con-title"></div>
+        <div class="goshoppingcar-con-subtitle">
+            香港直送商品订单满
+            <span class="">¥249</span>包邮
+        </div>
+        <form class="shopping-con">
+            <table class="table table-hover users" id="table-se">
+              <thead>
+                <tr>
+                  <th class="select-all-box">
+                      <input type="checkbox" class="select-all"/>
+                      <span>香港直送<span>
+                  </th>
+                  <th class="goods-type">商品名称</th>
+                  <th class="goods-type">单价</th>
+                  <th class="goods-type">数量</th>
+                  <th class="goods-type">小计</th>
+                  <th><a href="javascript:;">操作</a></th>
+                </tr>
+              </thead>
+              <tbody class="list-wrap"  style="border: none;">
+                  
+                 
+              </tbody>
+            </table>
+            <div class="other-options">
+                <div class="other-left">
+                    <div class="other-item-select">
+                        <input type="checkbox" class="select-all"/>
+                        <span>全选<span>
+                    </div>
+                    <a href="javascript:;" class="delect-select">删除选中的商品</a>
+                </div>
+                <div class="other-right">
+                    <div class="other-right-item">
+                        共<span class="total-select">0</span>件商品
+                    </div>
+                    <div class="other-right-item">
+                        商品应付金额￥<span class="total-money">0.00</span></div>
+                    <div class="other-right-item go-pay">去结算</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--底部1-->
+<div class="footer">
+    <div class="footer-con">
+        <div class="footer-con-top">
+            <div class="manjian-con-item">
+                <div class="manjian-item-icon"></div>
+                <div class="manjian-item-text">
+                    <p class="manjian-title">满￥249包邮</p>
+                    <p class="manjian-subtitle">全球采购 海淘so easy</p>
+                </div>
+            </div>
+            <div class="manjian-con-item">
+                <div class="manjian-item-icon"></div>
+                <div class="manjian-item-text">
+                    <p class="manjian-title">满￥249包邮</p>
+                    <p class="manjian-subtitle">全球采购 海淘so easy</p>
+                </div>
+            </div>
+            <div class="manjian-con-item">
+                <div class="manjian-item-icon"></div>
+                <div class="manjian-item-text">
+                    <p class="manjian-title">满￥249包邮</p>
+                    <p class="manjian-subtitle">全球采购 海淘so easy</p>
+                </div>
+            </div>
+            <div class="manjian-con-item">
+                <div class="manjian-item-icon"></div>
+                <div class="manjian-item-text">
+                    <p class="manjian-title">满￥249包邮</p>
+                    <p class="manjian-subtitle">全球采购 海淘so easy</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-con-center">
+            <div class="footer-center-left">
+                <div class="footer-left-top">
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="footer-left-bot">
+                    <a href="javascript:;"><img src="img/ft.jpg"></a>
+                </div>
+            </div>
+            <div class="footer-center-right">
+                <div class="footer-right-code fi">
+                    <div class="footer-code-wrap">
+                        <div class="footer-wrap-top">
+                            <img src="img/bw.jpg">
+                        </div>
+                        <div class="footer-wrap-cen">莎莎网官方微信</div>
+                        <div class="footer-wrap-bot">ID:hksasadotcom</div>
+                    </div>
+                </div>
+                <div class="footer-right-code se">
+                    <div class="footer-code-wrap">
+                        <div class="footer-wrap-top">
+                            <img src="img/bwb.jpg">
+                        </div>
+                        <div class="footer-wrap-cen">莎莎网官方微博</div>
+                        <div class="footer-wrap-bot">@莎莎网</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部2-->
+<div class="bottom">
+    <div class="bottom-con">
+        <p class="bottom-con-one">
+            <a href="javascript:;" style="padding: 0px">关于莎莎</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">关于莎莎</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+        </p>
+        <p class="bottom-con-two">Copyright 2000-2016 Sa Sa dot Com Limited  版权所有莎莎国际控股有限公司成员
+        </p>
+    </div>
+</div>
+<!--购物车右边栏-->
+<div class="gs-sidebar">
+    <div class="gs-sidebar-one">
+        <div class="gs-sidebar-f">
+            <a href="javascript:;">选购境外商品需知</a>
+            <div class="gs-sidebar-fh"></div>
+        </div>
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><span class="fonts">&#xe62b;</span></a>
+           <a href="javascript:;" class="gs-sidebar-stip">我的账户<span class="fonts">&#xe701;</span></a>
+        </div>
+        <div class="gs-sidebar-t">
+            <div class="gs-sidebar-tcon">
+                <a href="javascript:;"><span class="fonts">&#xe63f;</span>购物车</a>
+                <b><span>0</span</b>
+            </div>
+        </div>
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><span class="fonts">&#xe638;</span></a>
+           <a href="javascript:;" class="gs-sidebar-stip">我的收藏<span class="fonts">&#xe701;</span></a>
+        </div>
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><span class="fonts">&#xe627;</span></a>
+           <a href="javascript:;" class="gs-sidebar-stip">浏览记录<span class="fonts">&#xe701;</span></a>
+        </div>
+    </div>
+    <div class="gs-sidebar-two">
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><img src="img/livechat.png"></a>
+           <a href="javascript:;" class="gs-sidebar-stip">线上客服<span class="fonts">&#xe701;</span></a>
+        </div>
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><span class="fonts">&#xe642;</span></a>
+           <a href="javascript:;" class="gs-sidebar-stip">线上客服<span class="fonts">&#xe701;</span></a>
+        </div>
+        <div class="gs-sidebar-s hui-Top">
+           <a href="javascript:;"><span style="font-size: 14px;color:#fff;">Top</span></a>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/shouye.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/javascript" src="js/shoppingcar.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/html" id="cart-list">
+    {{each data as v}}
+        <tr data-id="{{v.id}}">
+            <td class="select-box">
+                <input type="checkbox" class="select" />
+                <img src="{{v.goods_pic_m}}">
+            </td>
+            <td class="goods-name">
+                <span>{{v.goods_name}}</span>
+                <p>&nbsp;</p>
+                <p>{{v.goods_type}}</p>
+            </td>
+            <td class="goods-price">{{v.goods_price}}</td>
+            <td class="goods-amount option">
+                <a href="javascript:;" class="option-item option-decrease">-</a>
+                <input class="option-item option-input" type="text" value="{{v.amount}}" data-stock="{{v.goods_stock}}">
+                <a href="javascript:;" class="option-item option-increase">+</a>
+            </td>
+            <td class="goods-total">{{(v.goods_price * v.amount).toFixed(2)}}</td>
+            <td class="goods-option">
+                <a href="javascript:;" class="delete">删除</a>
+            </td>
+        </tr>
+    {{/each}}
+</script>
+<script>
+   $(function(){
+        var cart = {
+            init:function(){
+                this.initList();
+                this.increase();
+                this.decrease();
+                this.inputChange();
+                this.deleteClick();
+                this.selectAll();
+                this.select();
+                this.deleteSelect();
+                this.gopay();
+            },
+            //初始化列表,获取数据,渲染到页面
+            initList:function(){
+
+                $.ajax({
+                    type:'get',
+                    url:'http://192.168.55.44/PC-Project-Admin/cartList.php',
+                    dataType:'jsonp',
+                    success:function(result){
+                        //console.log(result);
+                        //渲染数据到放到页面上list-wrap
+                        var html = template('cart-list',result);
+                        //console.log(html);
+                        $('.list-wrap').html(html);
+                    }
+                });
+            },
+            //数量增加
+            increase:function(){
+                //动态生成，用事件委托
+                var that = this;
+                $('.list-wrap').on('click','.option-increase',function(){
+                        //获取id
+                        var id = $(this).parents('tr').data('id');
+                        //获取库存
+                        var stock = $(this).prev().data('stock');
+                        //获取数量
+                        var amount = $(this).prev().val();
+
+                        if(amount >= stock){
+                            return;
+                        }
+                        amount++;
+                        //更新数量记录
+                        that.update(amount,id);                    
+                });
+            },
+            //数量改变，页面自动更新
+            update:function(amount,id){
+                var that = this;
+                var ld = layer.load(1);//加载效果1,2,3三种不同效果
+                $.ajax({
+                                type:'get',
+                                url:'http://192.168.55.44/PC-Project-Admin/cartUpdate.php',
+                                dataType:'jsonp',
+                                data:{id:id,amount:amount},
+                                success:function(data){
+                                    //更新成功后再次渲染页面
+                                    that.initList();
+                                    //layer.alert(data.info);
+                                    //成功后关掉加载效果
+                                    layer.close(ld);
+                                }
+                        });
+            },
+            //数量减少
+            decrease:function(){
+                var that = this;
+                $('.list-wrap').on('click','.option-decrease',function(e){
+                    e.preventDefault();
+                    //获取id
+                    var id = $(this).parents('tr').data('id');
+                    //获取数量
+                    var amount = $(this).next().val();
+                    if(amount <= 1){
+                        amount = 1;
+                    }
+                    amount--;
+                    //更新数量
+                    that.update(amount,id);
+                });
+            },
+            //数量改变,直接输入
+            inputChange:function(){
+                var that = this;
+                $('.list-wrap').on('blur','.option-input',function(e){
+                    e.preventDefault();
+                    //获取id
+                    var id = $(this).parents('tr').data('id');
+                    //获取数量
+                    var amount = $(this).val();
+                    //判断是否为整数
+                    amount = parseInt(amount) || 1;
+                    //获取库存
+                    var stock = $(this).data('stock');
+
+                    if(amount >= stock){
+                        amount = stock;
+                    }
+
+                    //页面自动更新数量
+                    that.update(amount,id);
+
+                });
+            },
+            //删除
+            deleteClick:function(){
+                var that = this;
+                $('.list-wrap').on('click','.delete',function(){
+                    var self = this;
+                    //弹框确认是否删除 
+                    var cfm = layer.confirm('确认删除该宝贝吗？',['确定','取消'],function(){
+                        layer.close(cfm);
+                        //获取该行id
+                        var id = $(self).parents('tr').data('id');
+                        
+                        //删除数据
+                        that.delete(id);
+
+                    });
+                });
+            },
+            //点击删除，页面自动更新
+            delete:function(id){
+                var that = this;
+                $.ajax({
+                            type:'get',
+                            url:'http://192.168.55.44/PC-Project-Admin/cartDelete.php',
+                            dataType:'jsonp',
+                            data:{id:id},
+                            success:function(data){
+                                console.log(data);
+                                layer.alert(data.info);
+                                that.initList();
+                                //在页面上更改商品选中条数和总价
+                                $('.total-select').html(0);
+                                $('.total-money').html('0.00');
+                            }
+                        });
+            },
+            //全选
+            selectAll:function(){
+
+                $('.select-all').on('click',function(){
+                    //alert(1);
+                    var status = $(this).prop('checked');
+                    //同步两个全选的状态
+                    $('.select-all').prop('checked',status);
+                    //改变状态
+                    $('.select').prop('checked',status);
+                    //全选被选中的时候，所有的已选中按钮自动触发点击事件，跟新数据
+                    $('.select').change();
+                });
+            },
+
+            //单选
+            select:function(){
+                //事件委托
+                $('.list-wrap').on('change','.select',function(){
+                    //获取所有的tr
+                    var allTr = $('.list-wrap tr');
+                    var count = 0;
+                    var totalMoney = 0;
+                    //遍历所有的tr
+                    allTr.each(function(){
+                        //拿到tr里面input的状态
+                        var status = $(this).find('.select').prop('checked');
+                        //当前行被选中
+                        if(status){
+                            count++;
+                            var t = $(this).find('.goods-total').html();//拿到每行tr内容是字符串类型
+                            totalMoney += parseFloat(t);
+                        }
+                        //在页面上更改商品选中条数和总价
+                        $('.total-select').html(count);
+                        $('.total-money').html(totalMoney.toFixed(2));
+                        //处理选中状态
+                        var selectTotal = $('.select:checked').length;
+                        var inputTotal = $('.select').length;
+                        if(selectTotal != inputTotal){
+                            $('.select-all').prop('checked',false);
+                        }else{
+                            $('.select-all').prop('checked',true);
+                        }
+                    });
+                });
+            },
+            //删除选中的商品
+            deleteSelect:function(){
+                var that = this;
+                $('.delect-select').on('click',function(){
+                    var select = $('.select:checked');
+
+                    if(!select.length){
+                        layer.alert('请选择要删除的记录');
+                        return;  
+                    }
+                    if(!confirm('确定删除选中的宝贝吗？')){
+                        return;
+                    }
+                    var ids = [];
+                    select.each(function(){
+                        var id = $(this).parents('tr').data('id');
+                        ids.push(id);
+                    });
+                    that.delete(ids);
+                });
+            },
+            //点击结算跳转到结算页面
+            gopay:function(){
+                $('.go-pay').click(function(){
+                    location.href="jiesuan.html";
+                });
+            }
+        }
+        
+        cart.init();
+   })
+</script>
+</html>

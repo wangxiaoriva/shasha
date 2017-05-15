@@ -1,0 +1,9 @@
+backTo:function(){
+                this.hui.on('click',function(){
+                    $('html,body').animate({scrollTop:0},1000)
+                })
+                //
+                $('.lift-item.back').on('click',function(){
+                    $('html,body').animate({scrollTop:0},1000)
+                })
+            }

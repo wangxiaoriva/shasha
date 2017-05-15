@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/shouye.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <style>
+        html,body{
+            background:#fff;
+        }
+    </style>
+</head>
+<body>
+<!-- 顶部导航 -->
+<div class="topbar">
+    <div class="topcon">
+        <div class="topcon-l">
+            <span>欢迎光临莎莎网！</span>
+            <a href="login.html">登录</a>
+            <span>或</span>
+            <a href="register.html">免费注册</a>
+        </div>
+        <div class="topcon-r">
+            <ul>
+                <li class="me-li">
+                    <div>我的账户<span class="fonts">&#xe66e;</span></div>
+                    <dl class="dlpos">
+                        <dd>
+                            <a href="shoppingcar.html" class="toua">我的订单</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的积分</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的优惠券</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的收藏</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的评价</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="go-che">
+                <div><span class="fonts red">&#xe632;</span><a href="shoppingcar.html">我的购物车</a></div>
+                    <div class="gowuche">
+                        <div class="gowuche-con">购物车中还没有商品 ,<br>快去挑选心爱的商品吧</div>
+                    </div>
+                </li>
+                <li class="t-hua">我的收藏</li>
+                <li class="t-hua">我的站内信</li>
+                <li class="t-hua">积分中心</li>
+                <li class="t-hua">Global site</li>
+                <li class="t-hua">
+                <div>关注我们<span class="fonts  red wb"><img src="img/w.png"></span><span class="fonts  red wx"><img src="img/x.png"></span></div>
+                <div class="weibo">
+                    <img src="img/w.jpg">
+                </div>
+                <div class="weixin">
+                    <img src="img/x.jpg">
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 莎莎logo -->
+<div class="header-main">
+    <div class="header-con">
+        <div class="header-logo">
+            <img src="img/l.png">
+        </div>
+    </div>
+</div>
+<!-- 注册-->
+<div class="regist">
+    <div class="regist-con login">
+        <div class="container regist">
+            <div class="regist-title">
+                <div class="regist-title-txt">
+                    用户登录
+                    <span class="regist-title-fr">
+                    还没有莎莎网帐号？<a href="javascript:;">立即注册</a>
+                    </span>
+                </div>
+            </div>
+            <div class="regist-signup">
+                <form>
+                    <div>
+                        <input type="text" class="username" placeholder="请输入用户名"/>
+                        <span class="yhxs"></span>
+                    </div>
+                    <div>
+                        <input type="password" class="password" placeholder="请输入密码"/>
+                        <span class="mm"></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="xz" checked />记住我
+                        <a href="javascript:;" class="mimase">忘记密码?</a>
+                    </div>
+                    <div>
+                             <button class="btn2" type="button">登录</button>
+                     </div>
+                     <div class="login-p">
+                             <p>第三方账号登录</p>
+                     </div>
+                     <ul class="login-tubiao">
+                        <li><a href="javascript:;"><img src="img/login01.jpg">QQ登录</a></li>
+                        <li><a href="javascript:;"><img src="img/login02.jpg">微博登录</a></li>
+                        <li><a href="javascript:;"><img src="img/login03.jpg">支付宝登录</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>   
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/shouye.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script>
+   $(function(){
+        var username = $('.username');
+        var password = $('.password'); 
+        var btn2 = $('.btn2');
+
+        btn2.on('click',function(){
+            var usernameV = username.val();
+            var passwordV = password.val();
+
+             $.ajax({
+                    type:'get',
+                    url:'http://192.168.55.44/PC-Project-Admin/login.php',
+                    dataType:'jsonp',
+                    data:{account:usernameV,password:passwordV},
+                    success:function(data){
+                        layer.alert(data.info);
+                        location.href = "shouye.html";
+                    }
+            })
+
+        })
+       
+   })
+</script>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>结算</title>
+    <link rel="stylesheet" type="text/css" href="css/shouye.css">
+    <link rel="stylesheet" type="text/css" href="css/jiesuan.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+</head>
+<body>
+<!-- 顶部导航 -->
+<div class="topbar">
+    <div class="topcon">
+        <div class="topcon-l">
+            <span>欢迎光临莎莎网！</span>
+            <a href="login.html">登录</a>
+            <span>或</span>
+            <a href="register1.html">免费注册</a>
+        </div>
+        <div class="topcon-r">
+            <ul>
+                <li class="me-li">
+                    <div>我的账户<span class="fonts">&#xe66e;</span></div>
+                    <dl class="dlpos">
+                        <dd>
+                            <a href="javascript:;" class="toua">我的订单</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的积分</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的优惠券</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的收藏</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;" class="toua">我的评价</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="go-che">
+                    <div><span class="fonts red">&#xe632;</span><a href="shoppingcar.html">我的购物车</a></div>
+                    <div class="gowuche">
+                        <div class="gowuche-con">购物车中还没有商品 ,<br>快去挑选心爱的商品吧</div>
+                    </div>
+                </li>
+                <li class="t-hua">我的收藏</li>
+                <li class="t-hua">我的站内信</li>
+                <li class="t-hua">积分中心</li>
+                <li class="t-hua">Global site</li>
+                <li class="t-hua">
+                <div>关注我们<span class="fonts  red wb"><img src="img/w.png"></span><span class="fonts  red wx"><img src="img/x.png"></span></div>
+                <div class="weibo">
+                    <img src="img/w.jpg">
+                </div>
+                <div class="weixin">
+                    <img src="img/x.jpg">
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 莎莎logo -->
+<div class="header-main">
+    <div class="header-con">
+        <div class="header-logo">
+            <img src="img/l.png">
+        </div>
+        <div class="header-jiesuan-center"></div>
+        <div class="header-jiesuan-fr">
+            <div>
+                <img src="img/cheche.png">
+                <img src="img/zheng.png">
+                <img src="img/yunsong.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 结算内容 -->
+<div class="jiesuan">
+    <div class="jiesuan-con">
+        <div class="jiesuan-con-title">
+            <div class="jiesuan-title-txt">确认订单信息</div>
+        </div>
+        <form>
+            <div class="order-dingdan">
+            <!--收货地址-->
+                <div class="">
+                    <div class="order-title">
+                        <i class="dottitle">1</i>
+                        <b>收货地址</b>
+                    </div>
+                    <div class="order-dingdan-main">
+                        <div class="order-main-title">
+                            <span>+ 填写新收货地址</span>
+                        </div>
+                        <div class="order-dizhi-con">
+                            <div>
+                                <label>收件人</label>
+                                <input type="text" placeholder="请填写收货人姓名" />
+                                <label>电邮</label>
+                                <input type="text" placeholder="电邮" />
+                                <em>如订单发生异常情况，我们将以电邮形式通知您。</em>
+                            </div>
+                            <div>
+                                <label>收货地址</label>
+                                <select>
+                                        <option>请选择省份</option>
+                                        <option>北京</option>
+                                        <option>上海</option>
+                                        <option>贵州</option>
+                                        <option>河北</option>
+                                        <option>湖北</option>
+                                        <option>上海</option>
+                                        <option>贵州</option>
+                                        <option>河北</option>
+                                        <option>湖北</option>
+                                        <option>河北</option>
+                                        <option>湖北</option>
+                                        <option>上海</option>
+                                        <option>贵州</option>
+                                        <option>河北</option>
+                                        <option>湖北</option>
+                                        <option>上海</option>
+                                        <option>贵州</option>
+                                        <option>河北</option>
+                                        <option>湖北</option>
+                                        <option>上海</option>
+                                        <option>贵州</option>
+                                        <option>河北</option>
+                                        <option>湖北</option>
+                                        <option>河北</option>
+                                        <option>湖北</option>
+                                        <option>上海</option>
+                                        <option>贵州</option>
+                                        <option>河北</option>
+                                        <option>湖北</option>
+                                </select>
+                                <input type="text" placeholder="邮政编码" />
+                            </div>
+                            <div>
+                                <label>详细地址</label>
+                                <input type="text" placeholder="请填写详细地址" class="address"/>
+                            </div>
+                            <div>
+                                <label>手机号码</label>
+                                <input type="text"/>
+                            </div>
+                            <div>
+                                <a href="javascript:;" class="queding">确定</a>
+                                <a href="javascript:;" class="quxiao">取消</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             <!--实名认证-->  
+                <div class="shimingrenzheng">
+                     <div class="order-title">
+                        <i class="dottitle">2</i>
+                        <b>实名认证</b>
+                    </div>
+                    <div class="wenxintips">   温馨提示：收件人请使用和身份证号对应的真实姓名，否则您购买的商品将无法通过海关检查！
+                    </div>
+                    <div class="yonghutips">
+                        <div>
+                            <label>用户姓名</label>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <label>身份证号</label>
+                            <input type="text" />
+                            <span class="shenfen-red"> 
+                                <i class="fonts">&#xe656;</i>为什么要身份证
+                                <span class="shenfen-jieshi">莎莎网香港直邮商品由香港发货，期间需要完成清关手续, 根据海关要求, 需要您填写收件人的身份证数据进行个人物品入境申报, 因为海关会对您的身份信息进行验证, 请确保数据填写正确, 否则商品有可能无法正常通关, 我们承诺致力保护您的个人资料不被滥用, 详情请参考莎莎网站内的「<a href="">私隐政策</a>」。
+                         </span>
+                                
+                            </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--商品清单-->  
+                <div class="qingdan">
+                    <div class="order-title" style="padding-bottom: 50px;">
+                        <i class="dottitle">2</i>
+                        <b>商品清单</b>
+                    </div>
+                    <form class="shopping-con" >
+                        <table class="table table-hover users" id="table-jiesuan">
+                          <thead>
+                                <tr>
+                                    <th>商品名称</th>
+                                    <th>单价</th>
+                                    <th>数量</th>
+                                    <th>小计</th>
+                                </tr>
+                           </thead>
+                          <tbody class="list-wrap"></tbody>
+                        </table>
+                        <!--现金券--> 
+                        <div class="xianjinquan">
+                            <div class="xianjinquan-con">
+                                <div class="xianjinquan-title">
+                                    <i class="fonts" style="font-size: 24px;">&#xe6f8;</i>
+                                    现金券代码
+                                </div>
+                                <div class="xianjinquan-main">
+                                    <div class="xianjinquan-main-item">
+                                        <input type="text"/>
+                                        <a href="javascript:;" class="queding">确定</a>
+                                    </div>
+                                    <div class="xianjinquan-main-item">
+                                        <p>或使用优惠券</p>
+                                    </div>
+                                    <div class="xianjinquan-main-item">
+                                        <select>
+                                            <option>-- 选择优惠券 --</option>
+                                            <option>[BAQ02NEW1612A] ￥888迎新礼-满￥599立减￥20优惠券</option>
+                                            <option>[BAQ02NEW1612A] ￥888迎新礼-满￥599立减￥20优惠券</option>
+                                            <option>[BAQ02NEW1612A] ￥888迎新礼-满￥599立减￥20优惠券</option>
+                                            <option>[BAQ02NEW1612A] ￥888迎新礼-满￥599立减￥20优惠券</option>
+                                            <option>[BAQ02NEW1612A] ￥888迎新礼-满￥599立减￥20优惠券</option>
+                                            <option>[BAQ02NEW3D] 新人￥10现金劵</option>
+                                            <option>[BAQ02NEW3D] 新人￥10现金劵</option>
+                                            <option>[BAQ02NEW3D] 新人￥10现金劵</option>
+                                            <option>[BAQ02NEW1612D] ￥888迎新礼-满￥1699立减￥80优惠券</option>
+                                            <option>[BAQ02NEW1612D] ￥888迎新礼-满￥1699立减￥80优惠券</option>
+                                            <option>[BAQ02NEW1612D] ￥888迎新礼-满￥1699立减￥80优惠券</option>
+                                        </select>
+                                    </div>
+                                    <div class="xianjin-jieshi">
+                                        <p>*所有优惠券只限账户持有人使用</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--订单价格总值-->  
+                            <div class="jiagezongzhi">
+                                <div class="jiagezongzhi-con">
+                                    <ul>
+                                        <li>
+                                            <span class="miaoshu">商品总值</span>
+                                            <span>￥2982.0</span>
+                                        </li>
+                                        <li>
+                                            <span class="miaoshu">运费</span>
+                                            <span>￥90.0</span>
+                                        </li>
+                                        <li>
+                                            <span class="miaoshu">折扣优惠</span>
+                                            <span>-￥90.0</span>
+                                        </li>
+                                        <li>
+                                            <span class="miaoshu">获得积分</span>
+                                            <span>￥2982.0</span>
+                                        </li>
+                                        <li class="jiesuan-maioshu">
+                                            <b class="miaoshu">总计</b>
+                                            <span class="miaoshu-price"><b>￥2982.0</b></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                   
+                    </div>
+                </form>
+                </div>
+                 <!--付款--> 
+                    <div class="fukuan">
+                        <div class="fukuan-con">
+                            <div class="order-title">
+                                <i class="dottitle">2</i>
+                                <b>实名认证</b>
+                            </div>
+                            <div class="fukuan-center">
+                                <div class="fukuan-center-item" style="border: 0">
+                                    <p>以人民币支付</p>
+                                    <ul class="zhifufangshi">
+                                        <li>
+                                            <input type="radio" name="payment"/>
+                                            <span class="fangshi-bao"><img src="img/alipayin.jpg"></span>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="payment"/>
+                                            <span class="fangshi-bao"><img src="img/TENPAY.jpg"></span>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="payment"/>
+                                            <span class="fangshi-bao"><img src="img/WECHAT.jpg"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="fukuan-center-item">
+                                    <p>以港币支付</p>
+                                    <ul class="zhifufangshi">
+                                        <li>
+                                            <input type="radio" name="payment"/>
+                                            <span class="fangshi-bao"><img src="img/unionpayin.jpg"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="fukuan-center-item">
+                                    <p>以美元支付</p>
+                                    <ul class="zhifufangshi">
+                                        <li>
+                                            <input type="radio" name="payment"/>
+                                            <span class="fangshi-bao"><img src="img/VISA.jpg"></span>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="payment"/>
+                                            <span class="fangshi-bao"><img src="img/Master.jpg"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="fukuan-center-item">
+                                       <div class="fukuantiaokuan">
+                                           <div class="fukuan-zuo">
+                                               <input type="checkbox"/> 
+                                               <span>我同意接受莎莎网的使用条款。</span>
+                                           </div>
+                                           <div class="fukuan-zhong">
+                                                <p>香港直送，运送时间一般为7-14个工作天。</p>
+                                                <p>香港直送，运送时间一般为7-14个工作天。</p>
+                                                <p>香港直送，运送时间一般为7-14个工作天。</p>
+                                                <p>香港直送，运送时间一般为7-14个工作天。</p>
+                                           </div>
+                                           <div class="fukuan-you">
+                                                <p><span class="jine">结账金额</span></p>
+                                           </div>
+                                        </div>
+                                </div>
+                                <div class="fukuan-center-item" style="padding-top:50px;text-align: right;">
+                                    <div class="fukuan-queding">
+                                        <a href="shoppingcar.html" class="quxiao">返回购物车</a>
+                                        <a href="javascript:;" class="queding">进行结账</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+        </form>
+    </div>
+<div style="height:10px;background:#f2f2f2;"></div>
+
+<!--底部1-->
+<div class="footer">
+    <div class="footer-con">
+        <div class="footer-con-top">
+            <div class="manjian-con-item">
+                <div class="manjian-item-icon"></div>
+                <div class="manjian-item-text">
+                    <p class="manjian-title">满￥249包邮</p>
+                    <p class="manjian-subtitle">全球采购 海淘so easy</p>
+                </div>
+            </div>
+            <div class="manjian-con-item">
+                <div class="manjian-item-icon"></div>
+                <div class="manjian-item-text">
+                    <p class="manjian-title">满￥249包邮</p>
+                    <p class="manjian-subtitle">全球采购 海淘so easy</p>
+                </div>
+            </div>
+            <div class="manjian-con-item">
+                <div class="manjian-item-icon"></div>
+                <div class="manjian-item-text">
+                    <p class="manjian-title">满￥249包邮</p>
+                    <p class="manjian-subtitle">全球采购 海淘so easy</p>
+                </div>
+            </div>
+            <div class="manjian-con-item">
+                <div class="manjian-item-icon"></div>
+                <div class="manjian-item-text">
+                    <p class="manjian-title">满￥249包邮</p>
+                    <p class="manjian-subtitle">全球采购 海淘so easy</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-con-center">
+            <div class="footer-center-left">
+                <div class="footer-left-top">
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footer-top-item">
+                        <dl class="footer-item-info">
+                            <dt><a href="javascript:;">新手上路</a></dt>
+                            <dd><a href="javascript:;">购物流程</a></dd>
+                            <dd><a href="javascript:;">优惠券说明</a></dd>
+                            <dd><a href="javascript:;">常见问题</a></dd>
+                            <dd><a href="javascript:;">联络我们</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="footer-left-bot">
+                    <a href="javascript:;"><img src="img/ft.jpg"></a>
+                </div>
+            </div>
+            <div class="footer-center-right">
+                <div class="footer-right-code fi">
+                    <div class="footer-code-wrap">
+                        <div class="footer-wrap-top">
+                            <img src="img/bw.jpg">
+                        </div>
+                        <div class="footer-wrap-cen">莎莎网官方微信</div>
+                        <div class="footer-wrap-bot">ID:hksasadotcom</div>
+                    </div>
+                </div>
+                <div class="footer-right-code se">
+                    <div class="footer-code-wrap">
+                        <div class="footer-wrap-top">
+                            <img src="img/bwb.jpg">
+                        </div>
+                        <div class="footer-wrap-cen">莎莎网官方微博</div>
+                        <div class="footer-wrap-bot">@莎莎网</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部2-->
+<div class="bottom">
+    <div class="bottom-con">
+        <p class="bottom-con-one">
+            <a href="javascript:;" style="padding: 0px">关于莎莎</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">关于莎莎</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+            <a href="javascript:;">|</a>
+            <a href="javascript:;">使用条款</a>
+        </p>
+        <p class="bottom-con-two">Copyright 2000-2016 Sa Sa dot Com Limited  版权所有莎莎国际控股有限公司成员
+        </p>
+    </div>
+</div>
+<!--购物车右边栏-->
+<div class="gs-sidebar">
+    <div class="gs-sidebar-one">
+        <div class="gs-sidebar-f">
+            <a href="javascript:;">选购境外商品需知</a>
+            <div class="gs-sidebar-fh"></div>
+        </div>
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><span class="fonts">&#xe62b;</span></a>
+           <a href="javascript:;" class="gs-sidebar-stip">我的账户<span class="fonts">&#xe701;</span></a>
+        </div>
+        <div class="gs-sidebar-t">
+            <div class="gs-sidebar-tcon">
+                <a href="javascript:;"><span class="fonts">&#xe63f;</span>购物车</a>
+                <b><span>0</span</b>
+            </div>
+        </div>
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><span class="fonts">&#xe638;</span></a>
+           <a href="javascript:;" class="gs-sidebar-stip">我的收藏<span class="fonts">&#xe701;</span></a>
+        </div>
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><span class="fonts">&#xe627;</span></a>
+           <a href="javascript:;" class="gs-sidebar-stip">浏览记录<span class="fonts">&#xe701;</span></a>
+        </div>
+    </div>
+    <div class="gs-sidebar-two">
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><img src="img/livechat.png"></a>
+           <a href="javascript:;" class="gs-sidebar-stip">线上客服<span class="fonts">&#xe701;</span></a>
+        </div>
+        <div class="gs-sidebar-s">
+           <a href="javascript:;"><span class="fonts">&#xe642;</span></a>
+           <a href="javascript:;" class="gs-sidebar-stip">线上客服<span class="fonts">&#xe701;</span></a>
+        </div>
+        <div class="gs-sidebar-s hui-Top">
+           <a href="javascript:;"><span style="font-size: 14px;color:#fff;">Top</span></a>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/shouye.js"></script>
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+<script type="text/html" id="gtype">
+    {{each data as v}}
+         <tr>
+         <td class="name-width">
+            <a href="javascript:;" id="huatu">
+                {{v.goods_name}}
+                <span><img src="{{v.goods_pic_m}}"></span>
+            </a>
+        </td>
+        <td class="price-width">{{v.goods_price}}</td>
+        <td>{{v.amount}}</td>
+        <td style="color:#ec3e7d;font-weight: bold;">￥{{v.amount*v.goods_price}}</td>
+         </tr>
+    {{/each}}
+</script>
+<script>
+    
+    var listWrap = $('.list-wrap');
+    //读取购物车列表，渲染页面
+    $.ajax({
+        type:'get',
+        url:'http://192.168.55.44/PC-Project-Admin/cartList.php',
+        dataType:'jsonp',
+        success:function(result){
+            console.log(result);
+            //渲染页面
+            var html = template('gtype',result);
+            listWrap.html(html);
+        }                     
+    });
+    
+    
+</script>
+</html>
